@@ -101,6 +101,13 @@ spec:
 
 > Please note that the config file name needs to be `vault.hcl` for Vault.
 
+```yaml
+spec:
+  configSource:
+    <type of volume>:
+      name: <name of volume>
+
+
 ### spec.backend
 
 `spec.backend` is a required field that specifies Vault backend storage configuration. Vault operator generates storage configuration according to this `spec.backend`.
